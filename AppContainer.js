@@ -6,6 +6,7 @@ import {
   StyleSheet,
   Button
 } from 'react-native'
+import uuidV4 from 'uuid/v4'
 
 export default class AppContainer extends React.Component {
   state = {
@@ -29,7 +30,7 @@ export default class AppContainer extends React.Component {
     })
   }
   render() {
-    const { bookStore: { toggleVisibility, state: { books, showBooks } }  } = this.props
+    const { bookStore, bookStore: { toggleVisibility, state: { books, showBooks } }  } = this.props
     console.log('locationsStore: ', this.props.locationsStore)
     const { state: { isFetching, locations }} = this.props.locationsStore
     console.log('isFetching: ', isFetching)

@@ -19,7 +19,7 @@ import AppContainer from './AppContainer'
 export default class App extends Component {
   render() {
     return (
-      <Provider inject={[BookStore, CounterStore, LocationsStore]}>
+      <Provider>
         <Subscribe to={[BookContainer, CounterContainer, LocationsContainer]}>
           {(bookStore, counterStore, locationsStore) => (
             <AppContainer
