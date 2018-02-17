@@ -18,8 +18,8 @@ export default class AppContainer extends React.Component {
     console.log('props: ', this.props)
     this.props.locationsStore.fetchLocations()
   }
-  addBook(store) {
-    store.addBook({
+  addBook() {
+    this.props.bookStore.addBook({
       ...this.state,
       id: uuidV4()
     })
@@ -58,7 +58,7 @@ export default class AppContainer extends React.Component {
           style={styles.input}
         />
         <Button
-          onPress={() => this.addBook(bookStore)}
+          onPress={() => this.addBook()}
           title="Add Book"
         />
          <Button
