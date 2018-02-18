@@ -27,9 +27,7 @@ class BookContainer extends Container {
   }
 }
 
-const BookStore = new BookContainer()
 
 export {
-  BookStore,
   BookContainer
 }

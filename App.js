@@ -11,9 +11,9 @@ import {
 import uuidV4 from 'uuid/v4'
 
 import { Subscribe, Provider } from 'unstated'
-import { BookStore, BookContainer } from './BookContainer'
-import { CounterStore, CounterContainer } from './CounterContainer'
-import { LocationsStore, LocationsContainer } from './LocationsContainer'
+import { BookContainer } from './BookContainer'
+import { CounterContainer } from './CounterContainer'
+import { LocationsContainer } from './LocationsContainer'
 import AppContainer from './AppContainer'
 
 export default class App extends Component {

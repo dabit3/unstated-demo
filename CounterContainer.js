@@ -10,9 +10,7 @@ class CounterContainer extends Container {
   };
 }
 
-const CounterStore = new CounterContainer()
 
 export {
-  CounterStore,
   CounterContainer
 }

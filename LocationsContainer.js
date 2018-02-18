@@ -22,9 +22,7 @@ class LocationsContainer extends Container {
   }
 }
 
-const LocationsStore = new LocationsContainer()
 
 export {
-  LocationsStore,
   LocationsContainer
 }
